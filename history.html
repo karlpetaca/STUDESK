@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studesk - Award-Winning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="icon" href="images/studesk-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="landing.html"><img src="images/studesk.jpg" alt="Studesk Logo" class="logo"></a>
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-bar" />
+                <i class="fas fa-search search-icon"></i>
+            </div>           
+            <div class="icons">
+                <a href="login.html" style="text-decoration: none;"><span class="icon"><i class="fas fa-user"></i></span></a>
+                <a href="add-to-cart.html"><span class="icon"><i class="fas fa-shopping-cart"></i></span></a>
+                <a href="wishlist.html"><span class="icon"><i class="fas fa-heart"></i></span></a>
+            </div>
+            <button class="navbar-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li class="dropdown" id="books-dropdown">
+                    <span class="dropdown-toggle" style="font-weight: 700; cursor: pointer; margin-left: 8px;">Books <i class="fas fa-caret-down"></i></span>
+                    <ul class="dropdown-menu menu-1">
+                        <li>
+                          <a href="fantasy.html"><p><strong>Fantasy</strong></p></a>
+                        </li>
+                        <!--Start-->
+                        <li>
+                          <a href="adventures.html"><p><strong>Action and Adventure</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="comedy.html"><p><strong>Comedy</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="drama.html"><p><strong>Drama</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="education.html"><p><strong>Education</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="history.html"><p><strong>History</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="mystery.html"><p><strong>Mystery</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="novels.html"><p><strong>Novels</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="romance.html"><p><strong>Romance</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="scifi.html"><p><strong>Sci - Fi</strong></p></a>
+                        </li>
+                        <!--End-->
+                    </ul>
+                </li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="best-sellers.html">Bestsellers</a></li>
+                <li><a href="award-winning.html">Award-Winning</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="school-supplies.html">School Supplies</a></li>
+                <li><a href="authors.html">Authors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="products-page">
+            <aside class="sidebar">
+                <h3>Price range: ₱0 - ₱2,000</h3>
+                <input type="range" min="0" max="2000" value="1000" />              
+
+                <h4>Language</h4>  
+                <ul class="filters language-filters">
+                    <li><label><input type="checkbox" class="language-filter" value="English"> English</label></li>
+                    <li><label><input type="checkbox" class="language-filter" value="Filipino"> Filipino</label></li>
+                    <li><label><input type="checkbox" class="language-filter" value="French"> French</label></li>
+                    <li><label><input type="checkbox" class="language-filter" value="Spanish"> Spanish</label></li>
+                </ul>
+            </aside>
+
+        <div class="main-content">
+            <h3 class="section-title">History</h3>
+            <div class="product-content">
+                <div class="products-header">
+                    <div></div>
+                    <div class="sort">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="relevance">Relevance</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="product-grid">
+                    <!--Start dito ang pag copy-->                    
+                    <div class="product-card" data-category="History" data-language="Filipino">
+                        <img src="images/Books/History/A Deep History From the stone age - 1499 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="Filipino">
+                        <img src="images/Books/History/Big Sister, Little Sister, Red Sister - 952 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="Filipino">
+                        <img src="images/Books/History/Dess Codes How the Laws of Fashion Made - 1191 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="Filipino">
+                        <img src="images/Books/History/From The Dawn of Civilization to Present - 1799 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="French">
+                        <img src="images/Books/History/Life in Medieval City - 968 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="French">
+                        <img src="images/Books/History/Queen Elizabeth II and the Royal Family - 1499 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="English">
+                        <img src="images/Books/History/The Bomb - Presidents, Generals, and the Secret - 864 - PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="English">
+                        <img src="images/Books/History/The Devil in the White City - 969 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="Spanish">
+                        <img src="images/Books/History/The Generals - Patton, MacArthur, Marshal - 895 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="Spanish">
+                        <img src="images/Books/History/The Rise and Fall of the Third Reich - 2799 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+                                        
+                    <!--End-->                         
+                </div>
+            </div>
+        </div>
+        </section>        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About us</a>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <a href="policy.html">Privacy Policies</a>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <a href="payments.html">Payments</a>
+            </div>
+            <div>
+                <h4>Misc</h4>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </div>
+        <p class="copyright">All rights reserved © Copyright</p>
+    </footer>
+    
+    <script src="scripts/sort.js"></script>
+    <script src="scripts/category.js"></script>
+    <script src="scripts/redirect.js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/burger.js"></script>
+
+</body>
+</html>

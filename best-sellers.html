@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studesk - Best Sellers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="icon" href="images/studesk-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="landing.html"><img src="images/studesk.jpg" alt="Studesk Logo" class="logo"></a>
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-bar" />
+                <i class="fas fa-search search-icon"></i>
+            </div>           
+            <div class="icons">
+                <a href="login.html" style="text-decoration: none;"><span class="icon"><i class="fas fa-user"></i></span></a>
+                <a href="add-to-cart.html"><span class="icon"><i class="fas fa-shopping-cart"></i></span></a>
+                <a href="wishlist.html"><span class="icon"><i class="fas fa-heart"></i></span></a>
+            </div>
+            <button class="navbar-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li class="dropdown" id="books-dropdown">
+                    <span class="dropdown-toggle" style="font-weight: 700; cursor: pointer; margin-left: 8px;">Books <i class="fas fa-caret-down"></i></span>
+                    <ul class="dropdown-menu menu-1">
+                        <li>
+                          <a href="fantasy.html"><p><strong>Fantasy</strong></p></a>
+                        </li>
+                        <!--Start-->
+                        <li>
+                          <a href="adventures.html"><p><strong>Action and Adventure</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="comedy.html"><p><strong>Comedy</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="drama.html"><p><strong>Drama</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="education.html"><p><strong>Education</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="history.html"><p><strong>History</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="mystery.html"><p><strong>Mystery</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="novels.html"><p><strong>Novels</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="romance.html"><p><strong>Romance</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="scifi.html"><p><strong>Sci - Fi</strong></p></a>
+                        </li>
+                        <!--End-->
+                    </ul>
+                </li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="best-sellers.html">Bestsellers</a></li>
+                <li><a href="award-winning.html">Award-Winning</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="school-supplies.html">School Supplies</a></li>
+                <li><a href="authors.html">Authors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="products-page">
+            <aside class="sidebar">
+                <h3>Price range: ₱0 - ₱2,000</h3>
+                <input type="range" min="0" max="2000" value="1000" />
+                <h4>Categories</h4>
+                <ul class="filters">
+                    <li><label><input type="checkbox" class="category-filter" value="Fantasy"> Fantasy</label></li> 
+                    <li><label><input type="checkbox" class="category-filter" value="Action and Adventure"> Action and Adventure</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Comedy"> Comedy</label></li> 
+                    <li><label><input type="checkbox" class="category-filter" value="Drama"> Drama</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Education"> Education</label></li> 
+                    <li><label><input type="checkbox" class="category-filter" value="History"> History</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Mystery"> Mystery</label></li> 
+                    <li><label><input type="checkbox" class="category-filter" value="Novels"> Novels</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Romance"> Romance</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Sci - Fi"> Sci - Fi</label></li>                    
+                </ul>                
+
+                <h4>Language</h4>  
+                <ul class="filters language-filters">
+                    <li><label><input type="checkbox" class="language-filter" value="English"> English</label></li>
+                    <li><label><input type="checkbox" class="language-filter" value="Filipino"> Filipino</label></li>
+                    <li><label><input type="checkbox" class="language-filter" value="French"> French</label></li>
+                    <li><label><input type="checkbox" class="language-filter" value="Spanish"> Spanish</label></li>
+                </ul>
+            </aside>
+
+        <div class="main-content">
+            <h3 class="section-title">Best Sellers</h3>
+            <div class="product-content">
+                <div class="products-header">
+                    <div></div>
+                    <div class="sort">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="relevance">Relevance</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="product-grid">
+                    <div class="product-card" data-category="Drama" data-language="French">
+                        <img src="images/Books/Drama/An Ideal Husband - 240 PHP.jpg"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">An Ideal Husband</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱240.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="French">
+                        <img src="images/Books/History/Life in Medieval City - 968 PHP.jpg"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Life in Medieval City</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱968.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Fantasy" data-language="French">
+                        <img src="images/Books/Fantasy/Bury Our Bones in the MN Soul - 1299 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Bury Our Bones in the MN Soul</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱1299.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Education" data-language="French">
+                        <img src="images/Books/Education/The heart of Business - 1680 PHP.jpg"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">The heart of Business</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱1680.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="French">
+                        <img src="images/Books/History/The Devil in the White City - 969 PHP.jpg"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">The Devil in the White City</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱789.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Romance" data-language="French">
+                        <img src="images/Books/Romance/Falling For You - 198 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Falling For You</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱198.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Romance" data-language="French">
+                        <img src="images/Books/Romance/Tangled Lives - 198 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Tangled Lives</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱198.00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="Action and Adventure" data-language="French">
+                        <img src="images/Books/Action and Adventure/Vilest Things.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Vilest Things</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱952.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Action and Adventure" data-language="French">
+                        <img src="images/Books/History/Queen Elizabeth II and the Royal Family - 1499 PHP.jpg"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Queen Elizabeth II and the Royal Family</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱1499.00</p>
+                        </div>
+                    </div>                    
+                    <div class="product-card" data-category="Novels" data-language="French">
+                        <img src="images/Books/Novels/Avengers - 1079 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Avengers</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱1079.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Novels" data-language="French">
+                        <img src="images/Books/Novels/The Darkest Minds - 1079 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">The Darkest Minds</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱1079.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Fantasy" data-language="French">
+                        <img src="images/Books/Fantasy/Flight Without End - 599 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Flight Without End</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱599.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="History" data-language="French">
+                        <img src="images/Books/History/Big Sister, Little Sister, Red Sister - 952 PHP.jpg"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Big Sister, Little Sister, Red Sister</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱952.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Fantasy" data-language="French">
+                        <img src="images/Books/Fantasy/Not Quite Dead Yet - 957 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Not Quite Dead Yet</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱957.00</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Sci Fi" data-language="French">
+                        <img src="images/Books/Sci Fi/Nightmare Academy - 189 PHP.avif"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">Nightmare Academy</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱189.00</p>
+                        </div>
+                    </div>
+
+                    <!--Start dito ang pag copy-->
+                    <div class="product-card" data-category="Action and Adventure">
+                        <img src="images/Books/Action and Adventure/A Dragon of Black Glass - 999 PHP.webp"  class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Dragon of Black Glass</p>
+                            <p class="category">By James Rollins</p>
+                            <p class="price">₱999.00</p>
+                        </div>
+                    </div>
+                    <!--End, then paste tapos repeat lang-->    
+                    <div class="product-card" data-category="Comedy">
+                        <img src="images/Books/Comedy/Alls well that ends well - 513 PHP.avif" class="product-clickable">
+                        <div class="info">
+                            <p class="title">All's Well That Ends Well</p>
+                            <p class="category">By William Shakespeare</p>
+                            <p class="price">₱513.00</p>
+                        </div>
+                    </div>   
+                    
+
+                    <div class="product-card" data-category="Drama">
+                        <img src="images/Books/Drama/A Midsummer Nights Dream, Collins Classics - 179 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Midsummer Nights Dream, Collins Classics</p>
+                            <p class="category">By William Shakespeare</p>
+                            <p class="price">₱179.00</p>
+                        </div>
+                    </div>  
+
+                    <div class="product-card" data-category="Education">
+                        <img src="images/Books/Education/Class Book and MultiROM - 896 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">Family and Friends</p>
+                            <p class="category">By Naomi Simmons</p>
+                            <p class="price">₱896.00</p>
+                        </div>
+                    </div>    
+                    
+                    <div class="product-card" data-category="Fantasy">
+                        <img src="images/Books/Fantasy/Alchemised 2270 PHP.webp" class="product-clickable">
+                        <div class="info">
+                            <p class="title">Alchemised</p>
+                            <p class="category">By SenLinYu</p>
+                            <p class="price">₱970.00</p>
+                        </div>
+                    </div>                    
+
+                    <div class="product-card" data-category="History">
+                        <img src="images/Books/History/A Deep History From the stone age - 1499 PHP.jpg" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Deep History, From the Stone Age of Robots</p>
+                            <p class="category">By James Suzman</p>
+                            <p class="price">₱899.99</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Mystery">
+                        <img src="images/Books/Mystery/A lesson in Love - 198 PHP.avif" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A lesson in Love</p>
+                            <p class="category">By Gervase Phinn</p>
+                            <p class="price">₱198.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Novels">
+                        <img src="images/Books/Novels/All-Star Superman - 579 PHP.webp" class="product-clickable">
+                        <div class="info">
+                            <p class="title">Vilest Things</p>
+                            <p class="category">By Grant Morrison</p>
+                            <p class="price">₱579.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Romance">
+                        <img src="images/Books/Romance/A Village Affair - 248 PHP.webp" class="product-clickable">
+                        <div class="info">
+                            <p class="title">A Village Affair</p>
+                            <p class="category">By Tracy Bloom</p>
+                            <p class="price">₱248.00</p>
+                        </div>
+                    </div>
+                    <!--Template-->
+                    <div class="product-card" data-category="Sci - Fi">
+                        <img src="images/Books/Sci Fi/Artemis Fowl - 189 PHP.avif" class="product-clickable">
+                        <div class="info">
+                            <p class="title">Artemis Fowl</p>
+                            <p class="category">By Eoin Colfer</p>
+                            <p class="price">₱189.00</p>
+                        </div>
+                    </div>
+                    <!--End-->                     
+                </div>
+            </div>
+        </div>
+        </section>        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About us</a>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <a href="policy.html">Privacy Policies</a>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <a href="payments.html">Payments</a>
+            </div>
+            <div>
+                <h4>Misc</h4>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </div>
+        <p class="copyright">All rights reserved © Copyright</p>
+    </footer>
+    
+    <script src="scripts/sort.js"></script>
+    <script src="scripts/category.js"></script>
+    <script src="scripts/redirect.js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/book.js"></script>
+
+</body>
+</html>

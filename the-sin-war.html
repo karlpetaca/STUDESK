@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studesk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="icon" href="images/studesk-icon.png" type="image/x-icon">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="landing.html"><img src="images/studesk.jpg" alt="Studesk Logo" class="logo"></a>
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-bar" />
+                <i class="fas fa-search search-icon"></i>
+            </div>           
+            <div class="icons">
+                <a href="login.html" style="text-decoration: none;"><span class="icon"><i class="fas fa-user"></i></span></a>
+                <a href="add-to-cart.html"><span class="icon"><i class="fas fa-shopping-cart"></i></span></a>
+                <a href="wishlist.html"><span class="icon"><i class="fas fa-heart"></i></span></a>
+            </div>
+            <button class="navbar-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li class="dropdown" id="books-dropdown">
+                    <span class="dropdown-toggle" style="font-weight: 700; cursor: pointer; margin-left: 8px;">Books <i class="fas fa-caret-down"></i></span>
+                    <ul class="dropdown-menu menu-1">
+                        <li>
+                          <a href="fantasy.html"><p><strong>Fantasy</strong></p></a>
+                        </li>
+                        <!--Start-->
+                        <li>
+                          <a href="adventures.html"><p><strong>Action and Adventure</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="comedy.html"><p><strong>Comedy</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="drama.html"><p><strong>Drama</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="education.html"><p><strong>Education</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="history.html"><p><strong>History</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="mystery.html"><p><strong>Mystery</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="novels.html"><p><strong>Novels</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="romance.html"><p><strong>Romance</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="scifi.html"><p><strong>Sci - Fi</strong></p></a>
+                        </li>
+                        <!--End-->
+                    </ul>
+                </li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="best-sellers.html">Bestsellers</a></li>
+                <li><a href="award-winning.html">Award-Winning</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="school-supplies.html">School Supplies</a></li>
+                <li><a href="authors.html">Authors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h3 class="section-title"> </h3>
+        <div id="cart-items">
+            <div class="product">
+                <img src="images/Books/Action and Adventure/The Sin War - 1455 PHP.webp" alt="Alchemised Book"><!--Palitan nyo lang book image dito same sa nasa carousel-->
+                <div class="product-details">
+                    <p class="title">The Sin War</p><!--Rename nyo rin to depende sa book name-->
+                    <p>By Richard A. Knaak</p>
+                    <p>₱1,455.00</p>
+                    <p class="shipping">Ships within 2–4 days</p>
+    
+                    <div class="user-info">
+                        <p>Name: Mark Zuckerberg</p>
+                        <p>Address: 1 Esperanza St., Hilltop Mansion Subdivision Lagro, Quezon City Metro Manila 1118.</p>
+                        <p>Phone: 09123456789</p>
+                    </div>
+    
+                    <div class="quantity-control">
+                        <button class="decrease">-</button>
+                        <span class="quantity">1</span>
+                        <button class="increase">+</button>
+                    </div>
+    
+                    <div class="action-buttons">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="wishlist">Move to Wishlist</button>
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <form>
+                        <h5>Payment Methods</h5>
+                        <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label><br>
+                        <label><input type="radio" name="payment_method" value="e_wallet"> E-Wallet</label><br>
+                        <label><input type="radio" name="payment_method" value="cash_on_delivery"> Cash on Delivery</label>
+                    </form>
+                    <button class="buy-now">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About us</a>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <a href="policy.html">Privacy Policies</a>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <a href="payments.html">Payments</a>
+            </div>
+            <div>
+                <h4>Misc</h4>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </div>
+        <p class="copyright">All rights reserved © Copyright</p>
+    </footer>
+
+    <script src="scripts/carousel.js"></script>
+    <!--<script src="scripts/items.js"></script>-->
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/burger.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const quantitySpan = document.querySelector('.quantity');
+            const decreaseBtn = document.querySelector('.decrease');
+            const increaseBtn = document.querySelector('.increase');
+            const addToCartBtn = document.querySelector('.add-to-cart');
+            const wishlistBtn = document.querySelector('.wishlist');
+            const buyNowBtn = document.querySelector('.buy-now');
+            let quantity = 1;
+    
+            // Handle quantity increase/decrease
+            increaseBtn.addEventListener('click', () => {
+                quantity++;
+                quantitySpan.textContent = quantity;
+            });
+    
+            decreaseBtn.addEventListener('click', () => {
+                if (quantity > 1) {
+                    quantity--;
+                    quantitySpan.textContent = quantity;
+                }
+            });
+    
+            // Add to Cart functionality
+            addToCartBtn.addEventListener('click', () => {
+                const product = {
+                    title: 'Alchemised',
+                    category: 'By SenLinYu',
+                    price: '₱1,764.00',
+                    image: 'images/Books/Action and Adventure/A Dragon of Black Glass - 999 PHP.webp',
+                    quantity: quantity
+                };
+    
+                // Get existing cart items or initialize empty array
+                const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                
+                // Add new item to cart
+                cartItems.push(product);
+                
+                // Save updated cart
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                
+                // Show success message
+                alert('Product added to cart successfully!');
+                
+                // Redirect to cart page
+                window.location.href = 'add-to-cart.html';
+            });
+    
+            // Wishlist functionality
+            wishlistBtn.addEventListener('click', () => {
+                const product = {
+                    title: 'Alchemised',
+                    category: 'By SenLinYu',
+                    price: '₱1,764.00',
+                    image: 'images/Books/Action and Adventure/A Dragon of Black Glass - 999 PHP.webp',
+                    quantity: quantity
+                };
+    
+                const wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+                wishlistItems.push(product);
+                localStorage.setItem('wishlistItems', JSON.stringify(wishlistItems));
+                
+                alert('Product added to wishlist!');
+                window.location.href = 'wishlist.html';
+            });
+    
+            // Buy Now functionality
+            buyNowBtn.addEventListener('click', () => {
+                const userInfo = JSON.parse(localStorage.getItem('userInfo')) || {};
+                
+                if (!userInfo.name) {
+                    alert('Please login first to place an order');
+                    window.location.href = 'login.html';
+                    return;
+                }
+
+                const selectedPayment = document.querySelector('input[name="payment_method"]:checked');
+                if (!selectedPayment) {
+                    alert('Please select a payment method');
+                    return;
+                }
+
+                const orderDetails = {
+                    date: new Date().toISOString(),
+                    items: [{
+                        title: document.querySelector('.title').textContent,
+                        author: document.querySelector('.product-details p:nth-child(2)').textContent,
+                        price: document.querySelector('.product-details p:nth-child(3)').textContent,
+                        image: document.querySelector('.product img').src,
+                        quantity: quantity
+                    }],
+                    total: parseFloat(document.querySelector('.product-details p:nth-child(3)').textContent.replace('₱', '').replace(',', '')) * quantity,
+                    paymentMethod: selectedPayment.value,
+                    shippingAddress: userInfo.address,
+                    customerName: userInfo.name,
+                    customerPhone: userInfo.phone
+                };
+
+                // Save order details
+                localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
+                
+                // Show success message with option to view order
+                if (confirm('Order placed successfully! Would you like to view your order?')) {
+                    window.location.href = 'orders.html';
+                }
+            });
+        });
+        </script>
+</body>
+</html>

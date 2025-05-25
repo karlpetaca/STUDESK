@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studesk - School Supplies</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
+    <link rel="icon" href="images/studesk-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="landing.html"><img src="images/studesk.jpg" alt="Studesk Logo" class="logo"></a>
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-bar" />
+                <i class="fas fa-search search-icon"></i>
+            </div>           
+            <div class="icons">
+                <a href="login.html" style="text-decoration: none;"><span class="icon"><i class="fas fa-user"></i></span></a>
+                <a href="add-to-cart.html"><span class="icon"><i class="fas fa-shopping-cart"></i></span></a>
+                <a href="wishlist.html"><span class="icon"><i class="fas fa-heart"></i></span></a>
+            </div>
+            <button class="navbar-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li class="dropdown" id="books-dropdown">
+                    <span class="dropdown-toggle" style="font-weight: 700; cursor: pointer; margin-left: 8px;">Books <i class="fas fa-caret-down"></i></span>
+                    <ul class="dropdown-menu menu-1">
+                        <li>
+                          <a href="fantasy.html"><p><strong>Fantasy</strong></p></a>
+                        </li>
+                        <!--Start-->
+                        <li>
+                          <a href="adventures.html"><p><strong>Action and Adventure</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="comedy.html"><p><strong>Comedy</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="drama.html"><p><strong>Drama</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="education.html"><p><strong>Education</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="history.html"><p><strong>History</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="mystery.html"><p><strong>Mystery</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="novels.html"><p><strong>Novels</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="romance.html"><p><strong>Romance</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="scifi.html"><p><strong>Sci - Fi</strong></p></a>
+                        </li>
+                        <!--End-->
+                    </ul>
+                </li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="best-sellers.html">Bestsellers</a></li>
+                <li><a href="award-winning.html">Award-Winning</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="school-supplies.html">School Supplies</a></li>
+                <li><a href="authors.html">Authors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="products-page">
+            <aside class="sidebar">
+                <h3>Price range: ₱0 - ₱2,000</h3>
+                <input type="range" min="0" max="2000" value="1000" />
+                <h4>Categories</h4>
+                <ul class="filters">
+                    <li><label><input type="checkbox" class="category-filter" value="Ballpens and Gel Pens"> Ballpens and Gel Pens</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Bond Paper"> Bond Paper</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Clearbooks"> Clearbooks</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Coloring Materials"> Coloring Materials</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Copy & Multi-purpose Paper"> Copy & Multi-purpose Paper</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Correction Supplies"> Correction Supplies</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Envelopes and Folders"> Envelopes and Folders</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Glues"> Glues</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Markers & Highlighters"> Markers & Highlighters</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Notebooks"> Notebooks</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Pencils"> Pencils</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Punchers"> Punchers</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Regular Tapes"> Regular Tapes</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Scissors"> Scissors</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Shop Specialty Paper"> Shop Specialty Paper</label></li>
+                    <li><label><input type="checkbox" class="category-filter" value="Writing Pads & Sticky Notes"> Writing Pads & Sticky Notes</label></li>
+                </ul>        
+            </aside>
+
+        <div class="product-grid">
+                    <div class="product-card" data-category="Ballpens and Gel Pens">
+                        <img src="images/Ballpens and Gell Pens/Dong-A Hi-Glider Pen 0.5mm Black - 12.75 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Hi-Glider Pen 0.5mm Black</p>
+                            <p class="brand">Dong-A</p>
+                            <p class="price">₱12</p>
+                        </div>
+                    </div>
+        
+                    <div class="product-card" data-category="Ballpens and Gel Pens">
+                        <img src="images/Ballpens and Gell Pens/Flexoffice FlexStick Ballpen 0.5mm Asstd 3s - 20.75 PHP.jpg">
+                        <div class="info">
+                            <p class="title">FlexStick Ballpen 0.5mm</p>
+                            <p class="brand">Flexoffice</p>
+                            <p class="price">₱20</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Bond Paper">
+                        <img src="images/Bond Paper/Colored Bond Paper Ltr 20s Blue - 18 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Bond Paper Ltr 20s Blue</p>
+                            <p class="brand">Colored</p>
+                            <p class="price">₱18</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Bond Paper">
+                        <img src="images/Bond Paper/Office Warehouse Bond Paper Sub20 Wht A4 500s - 210 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Bond Paper Sub20 Wht A4 500s</p>
+                            <p class="brand">Office Warehouse</p>
+                            <p class="price">₱210</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Notebooks">
+                        <img src="images/Notebooks/Cattleya Note Spiral Notebook 152x216mm 100 Sheets.jpg">
+                        <div class="info">
+                            <p class="title">Note Spiral Notebook 100 Sheets</p>
+                            <p class="brand">Cattleya</p>
+                            <p class="price">₱100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Regular Tapes">
+                        <img src="images/Regular Tapes/3M Scotch Celo Tape Utility Clear 12mm x 30m - 27 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Celo Tape Utility Clear 12mm x 30m</p>
+                            <p class="brand">3M Scotch</p>
+                            <p class="price">₱27</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Scissors">
+                        <img src="images/Scissors/Westcott Critters Scissors For Kids Blunt Tip 5 Crocodile - 69.75 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Critters Scissors Blunt Tip 5 Crocodile</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱69</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Markers & Highlighters">
+                        <img src="images/Markers & Highlighters/Artline Supreme Metallic Marker EPF-790 1.0mm Bronze - 69.75 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Supreme Metallic Marker EPF-790 1.0mm Bronze</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱69</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Glues">
+                        <img src="images/Glues/Elmer_s Washable Color Glue Opaque Blue - 99.80 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Elmer's Washable Color Glue Opaque Blue</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱99</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Punchers">
+                        <img src="images/Punchers/Eagle Alpha Two-hole Puncher P5024B-A - 125 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Eagle Alpha Two-hole Puncher P5024B-A</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱125</p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="product-card"data-category="Writing Pads & Sticky Notes">
+                        <img src="images/Writing Pads & Sticky Notes/Afford Grade 1 Writing Pad 80LVS 5padspack - 100 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Afford Grade 1 Writing Pad 80LVS 5padspack</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱100</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Coloring Materials">
+                        <img src="images/Coloring Materials/Colleen Poster Color 12ml Black - 34 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Colleen Poster Color 12ml Black</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱145</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Envelopes and Folders">
+                        <img src="images/Envelopes and Folders/Adventurer Folder - 22 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Adventurer Folder</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱22</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Shop Specialty Paper">
+                        <img src="images/Shop Specialty Paper/Exceline Onion Skin Paper White Letter 20s - 15.50 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Exceline Onion Skin Paper White Letter 20s</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱15</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Clearbooks">
+                        <img src="images/Clearbooks/Eagle Clearbook 20PKT 9002AK A4 Blk - 65 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Eagle Clearbook 20PKT 9002AK A4 Black</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱65</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Copy & Multi-purpose Paper">
+                        <img src="images/Copy & Multi-purpose Paper/Office Warehouse Premium Copy Paper 80gsm A4 500s - 255 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Office Warehouse Premium Copy Paper 80gsm Letter 500s</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱255</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Notebooks">
+                        <img src="images/Notebooks/Green Apple Memo Notebook G-0580-OE 80LVS 127x178mm - 46 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Green Apple Memo Notebook G-0580-OE 80LVS 127x178mm</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱46</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="Correction Supplies" >
+                        <img src="images/Correction Supplies/Joy Correction Tape J-805 5mmx4.5m - 15.50 PHP.jpg">
+                        <div class="info">
+                            <p class="title">Joy Correction Tape J-821 5mmx12m</p>
+                            <p class="brand">Westcott</p>
+                            <p class="price">₱15</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Regular Tapes">
+                        <img src="images/Regular Tapes/3M Scotch Celo Tape Utility Clear 12mm x 30m - 27 PHP.jpg">
+                        <div class="info">
+                            <p class="title">3M Scotch Celo Tape Utility Clear 18mm x 30m</p>
+                            <p class="brand">Mongol</p>
+                            <p class="price">₱27</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card"data-category="Pencils">
+                        <img src="images/Pencils/Colleen Drawing Pencil 3030 2B - 15.75 PHP.png">
+                        <div class="info">
+                            <p class="title">Drawing Pencil 3030 2B</p>
+                            <p class="brand">Colleen</p>
+                            <p class="price">₱15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About us</a>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <a href="policy.html">Privacy Policies</a>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <a href="payments.html">Payments</a>
+            </div>
+            <div>
+                <h4>Misc</h4>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </div>
+        <p class="copyright">All rights reserved © Copyright</p>
+    </footer>
+    
+    <script src="scripts/sort.js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/category.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const products = document.querySelectorAll('.product-card');
+
+        products.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.querySelector('.title').textContent;
+                const brand = card.querySelector('.brand').textContent;
+                const price = card.querySelector('.price').textContent;
+                const image = card.querySelector('img').getAttribute('src');
+
+                const productData = {
+                    title,
+                    brand,
+                    price,
+                    image
+                };
+
+                localStorage.setItem('selectedProduct', JSON.stringify(productData));
+                window.location.href = 'cart.html';
+            });
+        });
+    });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const checkboxes = document.querySelectorAll('.category-filter');
+        const productCards = document.querySelectorAll('.product-card');
+
+        function filterProducts() {
+            const selectedCategories = Array.from(checkboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (selectedCategories.length === 0 || selectedCategories.includes(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', filterProducts);
+        });
+
+        filterProducts();
+    });
+    </script>
+
+        
+</body>
+</html>

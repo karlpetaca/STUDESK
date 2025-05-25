@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studesk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="icon" href="images/studesk-icon.png" type="image/x-icon">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="landing.html"><img src="images/studesk.jpg" alt="Studesk Logo" class="logo"></a>
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-bar" />
+                <i class="fas fa-search search-icon"></i>
+            </div>           
+            <div class="icons">
+                <a href="login.html" style="text-decoration: none;"><span class="icon"><i class="fas fa-user"></i></span></a>
+                <a href="add-to-cart.html"><span class="icon"><i class="fas fa-shopping-cart"></i></span></a>
+                <a href="wishlist.html"><span class="icon"><i class="fas fa-heart"></i></span></a>
+            </div>
+            <button class="navbar-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li class="dropdown" id="books-dropdown">
+                    <span class="dropdown-toggle" style="font-weight: 700; cursor: pointer; margin-left: 8px;">Books <i class="fas fa-caret-down"></i></span>
+                    <ul class="dropdown-menu menu-1">
+                        <li>
+                          <a href="fantasy.html"><p><strong>Fantasy</strong></p></a>
+                        </li>
+                        <!--Start-->
+                        <li>
+                          <a href="adventures.html"><p><strong>Action and Adventure</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="comedy.html"><p><strong>Comedy</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="drama.html"><p><strong>Drama</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="education.html"><p><strong>Education</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="history.html"><p><strong>History</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="mystery.html"><p><strong>Mystery</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="novels.html"><p><strong>Novels</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="romance.html"><p><strong>Romance</strong></p></a>
+                        </li>
+
+                        <li>
+                          <a href="scifi.html"><p><strong>Sci - Fi</strong></p></a>
+                        </li>
+                        <!--End-->
+                    </ul>
+                </li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="best-sellers.html">Bestsellers</a></li>
+                <li><a href="award-winning.html">Award-Winning</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="school-supplies.html">School Supplies</a></li>
+                <li><a href="authors.html">Authors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h3 class="section-title">My Shopping Cart</h3>
+        <div id="cart-items">
+            <div id="cart-product" class="product"></div>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About us</a>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <a href="policy.html">Privacy Policies</a>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <a href="payments.html">Payments</a>
+            </div>
+            <div>
+                <h4>Misc</h4>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </div>
+        <p class="copyright">All rights reserved © Copyright</p>
+    </footer>
+
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/burger.js"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const container = document.getElementById('cart-product');
+        const product = JSON.parse(localStorage.getItem('selectedProduct'));
+
+        if (!product) return;
+
+        let quantity = 1;
+
+        container.innerHTML = `
+            <img src="${product.image}" alt="${product.title}">
+            <div class="product-details">
+                <p class="title">${product.title}</p>
+                <p class="category">${product.category}</p>
+                <p>${product.price}</p>
+                <p class="shipping">Ships within 2–4 days</p>
+
+                <div class="user-info">
+                    <p>Name: Mark Zuckerberg</p>
+                    <p>Address: 1 Esperanza St., Hilltop Mansion Subdivision Lagro, Quezon City Metro Manila 1118</p>
+                    <p>Phone: 09123456789</p>
+                </div>
+
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="wishlist">Move to Wishlist</button>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <form>
+                    <h5>Payment Methods</h5>
+                    <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label><br>
+                    <label><input type="radio" name="payment_method" value="e_wallet"> E-Wallet</label><br>
+                    <label><input type="radio" name="payment_method" value="cash_on_delivery"> Cash on Delivery</label>
+                </form>
+                <button class="buy-now">Place Order</button>
+            </div>
+        `;
+
+        const quantitySpan = container.querySelector('.quantity');
+
+        container.querySelector('.increase').addEventListener('click', () => {
+            quantity++;
+            quantitySpan.textContent = quantity;
+        });
+
+        container.querySelector('.decrease').addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                quantitySpan.textContent = quantity;
+            }
+        });
+
+        container.querySelector('.add-to-cart').addEventListener('click', () => {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            cartItems.push({
+                ...product,
+                quantity
+            });
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            localStorage.removeItem('selectedProduct');
+            alert('Product added to cart successfully!');
+            window.location.href = 'add-to-cart.html';
+        });
+
+        container.querySelector('.wishlist').addEventListener('click', () => {
+            const wishlist = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+            wishlist.push({ ...product, quantity });
+            localStorage.setItem('wishlistItems', JSON.stringify(wishlist));
+            localStorage.removeItem('selectedProduct');
+            window.location.href = 'wishlist.html';
+        });
+
+        container.querySelector('.buy-now').addEventListener('click', () => {
+            const selectedPayment = document.querySelector('input[name="payment_method"]:checked');
+            if (!selectedPayment) {
+                alert('Please select a payment method');
+                return;
+            }
+
+            const order = {
+                items: [{
+                ...product,
+                    quantity
+                }],
+                date: new Date().toISOString(),
+                total: parseFloat(product.price.replace('₱', '')) * quantity,
+                paymentMethod: selectedPayment.value,
+                shippingAddress: "1 Esperanza St., Hilltop Mansion Subdivision Lagro, Quezon City Metro Manila 1118",
+                customerName: "Mark Zuckerberg",
+                phone: "09123456789"
+            };
+            
+            localStorage.setItem('orderDetails', JSON.stringify(order));
+            localStorage.removeItem('selectedProduct');
+            window.location.href = 'orders.html';
+        });
+    });
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const product = JSON.parse(localStorage.getItem('selectedProduct'));
+
+        if (product) {
+            const cartContainer = document.getElementById('cart-container');
+            cartContainer.innerHTML = `
+                <div class="cart-item">
+                    <img src="${product.image}" alt="${product.title}" />
+                    <h2>${product.title}</h2>
+                    <p>Brand: ${product.brand}</p>
+                    <p>Price: ${product.price}</p>
+                </div>
+            `;
+        }
+    });
+    </script>
+
+</body>
+</html>
